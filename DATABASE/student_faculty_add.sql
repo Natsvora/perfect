@@ -1,0 +1,60 @@
+-- MySQL dump 10.13  Distrib 5.7.21, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: student
+-- ------------------------------------------------------
+-- Server version	5.7.21-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `faculty_add`
+--
+
+DROP TABLE IF EXISTS `faculty_add`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `faculty_add` (
+  `ID` int(11) NOT NULL,
+  `Temporary_add` varchar(255) NOT NULL,
+  `TEMP_CITY_ID` int(11) DEFAULT NULL,
+  `Permanent_add` varchar(100) NOT NULL,
+  `PERMANENT_CITY_ID` int(11) DEFAULT NULL,
+  `FACULTY_ID` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `fk_faculty_add_1_idx` (`FACULTY_ID`),
+  KEY `fk_faculty_add_2_idx` (`TEMP_CITY_ID`),
+  KEY `fk_faculty_add_3_idx` (`PERMANENT_CITY_ID`),
+  CONSTRAINT `fk_faculty_add_1` FOREIGN KEY (`FACULTY_ID`) REFERENCES `FACULTY` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_faculty_add_2` FOREIGN KEY (`TEMP_CITY_ID`) REFERENCES `city` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_faculty_add_3` FOREIGN KEY (`PERMANENT_CITY_ID`) REFERENCES `city` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `faculty_add`
+--
+
+LOCK TABLES `faculty_add` WRITE;
+/*!40000 ALTER TABLE `faculty_add` DISABLE KEYS */;
+/*!40000 ALTER TABLE `faculty_add` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-04-11 17:36:59
