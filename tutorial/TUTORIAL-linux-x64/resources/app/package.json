@@ -1,0 +1,19 @@
+{
+  "name": "electrol",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron index.js",
+    "package": "",
+    "build": "electron-packager . TUTORIAL"
+  },
+  "author": "Mr.stark",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.8.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.0.1"
+  }
+}
