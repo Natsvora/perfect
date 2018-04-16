@@ -8,6 +8,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { StudentComponent } from './student/student.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component';
     NavbarComponent,
     SidebarComponent,
     AdminpanelComponent,
-    LoginComponent
+    LoginComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

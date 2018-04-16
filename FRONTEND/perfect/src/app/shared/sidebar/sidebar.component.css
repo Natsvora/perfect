@@ -1,0 +1,26 @@
+.panel-body:hover{
+    background-color:rgb(230, 230, 230);
+ }
+
+ .panel-body{
+    font-family: 'Material Icons';
+    font-size: 14px;
+    line-height: 18px;
+    background-color:rgb(237, 237, 237);
+    padding-left: 80px;
+ }
+ .a{
+    text-decoration:none;
+ }
+ .parent{
+    background-color:rgb(245, 245, 245);
+ }
+
+ a:hover{
+     background-color: tomato;
+ }
+
+ .panel-body:hover{
+    cursor: hand;
+    cursor: pointer;
+ }

@@ -1,52 +1,162 @@
-<div class="be-left-sidebar panel-full-dark">
-  <!-- <div class="left-sidebar-wrapper"> -->
-    <!-- <a href="#" class="left-sidebar-toggle">Blank Page</a> -->
-    <!-- <div class="left-sidebar-spacer">
-      <div class="left-sidebar-scroll">
-        <div class="left-sidebar-content">
-          <ul class="sidebar-elements">
-            <li class="divider">Menu</li>
-            <li class="parent">
-              <a href="#">
-                <i class="icon mdi mdi-home"></i>
-                <span>Home</span>
-              </a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="pages-blank.html">Blank Page</a>
-                </li>
-                <li class="active">
-                  <a href="index.html">Blank Page Header</a>
-                </li>
-                <li>
-                  <a href="pages-blank-aside.html">Page Aside</a>
-                </li>
-                <li>
-                  <a href="pages-login.html">Login</a>
-                </li>
-                <li>
-                  <a href="pages-404.html">404 Page</a>
-                </li>
-                <li>
-                  <a href="pages-sign-up.html">Sign Up</a>
-                </li>
-                <li>
-                  <a href="pages-forgot-password.html">Forgot Password</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+<div class="left-sidebar-wrapper">
+  <a href="#" class="left-sidebar-toggle">Dashboard</a>
+  <div class="left-sidebar-spacer">
+    <div class="left-sidebar-scroll ps-container ps-theme-default" data-ps-id="cca9f437-382a-9887-72d4-f25a02e8b281">
+      <div class="left-sidebar-content">
+        <ul class="sidebar-elements">
+          <li class="divider">Menu</li>
+          <li>
+            <!-- <a href="/adminpanel">
+              <i class="icon "></i>
+              <span>Dashboard</span>
+            </a> -->
+            <a class="icon-container" routerLink="/adminpanel">
+              <div class="icon">
+                <span class="mdi mdi-home"></span>
+              </div>
+              <span class="icon-class">Dashboard</span>
+            </a>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse1">
+              <div class="icon">
+                <span class="mdi mdi-face"></span>
+              </div>
+              <span class="icon-class">Student</span>
+            </a>
+            <div id="collapse1" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body" routerLink="/student">
+                <span>Student</span>
+              </div>
+              <div class="panel-body" routerLink="/studentdetails">
+                Student profiles
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse2">
+              <div class="icon">
+                <span class="mdi mdi-money"></span>
+              </div>
+              <span class="icon-class">Fees</span>
+            </a>
+            <div id="collapse2" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body">
+                Flot
+              </div>
+              <div class="panel-body">
+                Sparklines
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse3">
+              <div class="icon">
+                <span class="mdi mdi-calendar-note"></span>
+              </div>
+              <span class="icon-class">Batch</span>
+            </a>
+            <div id="collapse3" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body">
+                Flot
+              </div>
+              <div class="panel-body">
+                Sparklines
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse4">
+              <div class="icon">
+                <span class="mdi mdi-widgets"></span>
+              </div>
+              <span class="icon-class">Report</span>
+            </a>
+            <div id="collapse4" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body">
+                Flot
+              </div>
+              <div class="panel-body">
+                Sparklines
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse5">
+              <div class="icon">
+                <span class="mdi mdi-layers"></span>
+              </div>
+              <span class="icon-class">Competition</span>
+            </a>
+            <div id="collapse5" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body">
+                Flot
+              </div>
+              <div class="panel-body">
+                Sparklines
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+          <li class="parent icon-container">
+            <a data-toggle="collapse" href="#collapse6">
+              <div class="icon">
+                <span class="mdi mdi-notifications-active"></span>
+              </div>
+              <span class="icon-class">Reminder</span>
+            </a>
+            <div id="collapse6" class="panel-collapse collapse text-left  h4">
+              <div class="panel-body">
+                Flot
+              </div>
+              <div class="panel-body">
+                Sparklines
+              </div>
+              <div class="panel-body">
+                Chart
+              </div>
+              <div class="panel-body" router>
+                Morris.js
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div> -->
-    <!-- <div class="progress-widget">
-      <div class="progress-data">
-        <span class="progress-value">60%</span>
-        <span class="name">Current Project</span>
+      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+        <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
       </div>
-      <div class="progress">
-        <div style="width: 60%;" class="progress-bar progress-bar-primary"></div>
+      <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 541px;">
+        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 475px;"></div>
       </div>
     </div>
-  </div> -->
+  </div>
 </div>

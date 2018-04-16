@@ -10682,30 +10682,27 @@ canvas {
   [Icons]
 */
 .icon-container {
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: #fffffe;
   cursor: default;
 }
 .icon-container .icon {
-  -webkit-transition: background-color 300ms ease-in-out;
-  -o-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
   background-color: #f5f5f5;
   border-radius: 50%;
   display: inline-block;
-  height: 50px;
-  width: 50px;
-  margin-right: 8px;
-  padding: 12px;
-  padding: 13px;
-  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 8px;
+  padding: 7px;
   vertical-align: middle;
 }
 .icon-container .icon span {
-  -webkit-transition: color 300ms ease-in-out;
-  -o-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
-  font-size: 25px;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-size: 18px;
   color: #696767;
 }
 .icon-container .icon:hover {
@@ -10715,13 +10712,18 @@ canvas {
   color: #ffffff;
 }
 .icon-container .icon-class {
-  -webkit-transition: color 300ms ease-in-out;
-  -o-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
-  font-size: 18px;
-  font-weight: 300;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-size: 14px;
   vertical-align: middle;
-  color: #696767;
+  padding: 0 20px;
+  color: #646464;
+  line-height: 38px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-style: normal;
 }
 .icon-container:hover .icon {
   background-color: #4285f4;
