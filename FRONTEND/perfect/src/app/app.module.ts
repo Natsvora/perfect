@@ -8,7 +8,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
-import { StudentComponent } from './student/student.component';
+import { StudentComponent } from './student/student/student.component';
 
 
 @NgModule({
